@@ -25,7 +25,6 @@ func main() {
 
 	for _, obj := range objs {
 		if value, ok := obj.Data["key"]; ok {
-			//fmt.Println("Value found: ", value)
 			uniqMap[value.(string)] = struct{}{}
 		}
 	}
